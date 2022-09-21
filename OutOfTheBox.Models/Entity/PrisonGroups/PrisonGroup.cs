@@ -20,7 +20,7 @@ namespace OutOfTheBox.Models.Entity.PrisonGroups
         #endregion
         public bool IsDeleted { get; private set; }
         
-        public virtual ICollection<Prison> Employees { get; private set; } = new HashSet<Prison>();
+        public virtual ICollection<Prison> Prisons { get; private set; } = new HashSet<Prison>();
 
         public PrisonGroup(string name)
         {

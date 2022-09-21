@@ -22,12 +22,5 @@ public static class ApplicationRegistration
                 services.Add(ServiceDescriptor.Transient(x.InterfaceType, x.ValidatorType));
                 services.Add(ServiceDescriptor.Transient(x.ValidatorType, x.ValidatorType));
             });
-        services.AddTransient<PrisonGroup>();
-        services.AddTransient<Prison>();
-        services.AddTransient<SmallCell>();
-        services.AddTransient<MediumCell>();
-        services.AddTransient<BigCell>();
-        services.AddTransient<IsolationCell>();
-        services.AddTransient<Prisoner>();
     }
 }
